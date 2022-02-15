@@ -1,0 +1,39 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.pixContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  width: 400px;
+  height: 400px;
+}
+
+.pixel {
+  border: 0.01rem solid #845EC2;
+  width: 100px;
+  height: 100px;
+}
+
+.pixel:hover {
+  background-color: #845EC2;
+}
+
+.pixelOn {
+  background-color: #845EC2;
+  width: 100px;
+  height: 100px;
+}
+/*# sourceMappingURL=custom.css.map */

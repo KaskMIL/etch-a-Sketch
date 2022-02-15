@@ -1,0 +1,23 @@
+{
+  "name": "etch-a-sketch",
+  "version": "1.0.0",
+  "description": "etch-a-sketch pryect for The Odin Proyect",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaskMIL/etch-a-Sketch.git"
+  },
+  "author": "Tom Milanesi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaskMIL/etch-a-Sketch/issues"
+  },
+  "homepage": "https://github.com/KaskMIL/etch-a-Sketch#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "sass": "^1.49.7"
+  }
+}

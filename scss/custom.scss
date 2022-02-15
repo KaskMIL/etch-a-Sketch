@@ -1,0 +1,34 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.pixContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 400px;
+    height: 400px;
+
+}
+
+.pixel {
+    border: 0.01rem solid #845EC2;
+    width: 100px;
+    height: 100px;
+
+    &:hover {
+        background-color: #845EC2;
+    }
+}
+
+.pixelOn {
+    background-color: #845EC2;
+    width: 100px;
+    height: 100px;
+}
