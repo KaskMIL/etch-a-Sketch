@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,33 @@
     <link rel="stylesheet" href="scss/custom.css">
     <title>Document</title>
 </head>
+
 <body>
+    <h1>Etch a Sketch</h1>
     <main>
+        <div class="optionsContainer">
+            <div class="sizeContainer">
+                <h4>Grid Size</h4>
+                <div class="gridSize">
+                    <div id="diez" class="button">16x16</div>
+                    <div id="treinta" class="button">32x32</div>
+                    <div id="sesenta" class="button">64x64</div>
+                </div>
+            </div>
+            <div class="colorContainer">
+                <h4>Color</h4>
+                <div class="colors">
+                    <div class="button">black</div>
+                    <div class="button">purple</div>
+                    <div class="button">orange</div>
+                </div>
+            </div>
+        </div>
         <div class="pixContainer" id="pix-container">
         </div>
     </main>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
