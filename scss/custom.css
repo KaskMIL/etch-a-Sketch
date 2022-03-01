@@ -13,7 +13,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: antiquewhite;
+  background-color: black;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,8 +25,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
+  font-family: monospace;
+}
+
+body header {
+  margin: 0;
+  padding: 0;
+}
+
+body header h1 {
+  margin: 0 0 1.5rem 0;
+  padding: 0;
 }
 
 body main {
@@ -36,7 +48,9 @@ body main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 body main .optionsContainer {
@@ -45,13 +59,19 @@ body main .optionsContainer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border: 0.1rem solid #c25e90;
-  margin-bottom: 2rem;
   padding: 1rem 0;
+  margin-bottom: 0.5rem;
+  background-color: #ED1B0C;
+  color: #ffcc99;
+  border-radius: 1rem;
 }
 
-body main .optionsContainer h4 {
+body main .optionsContainer h2 {
+  color: white;
   margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 body main .optionsContainer .sizeContainer {
@@ -65,15 +85,12 @@ body main .optionsContainer .sizeContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 0.1rem solid #5e65c2;
-  width: 50%;
 }
 
 body main .optionsContainer .sizeContainer .gridSize {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -89,90 +106,91 @@ body main .optionsContainer .colorContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 0.1rem solid #bbc25e;
-  width: 50%;
 }
 
 body main .optionsContainer .colorContainer .colors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
 body main .optionsContainer .button {
-  border: 0.1rem solid #c2865e;
-  padding: 0.3rem 1.5rem;
+  border: 0.1rem solid #ffcc99;
+  padding: 0.3rem 1rem;
+  margin: 0 0.5rem;
   cursor: pointer;
   border-radius: 1rem;
 }
 
 body main .optionsContainer .button:hover {
-  background-color: #5e65c2;
+  background-color: black;
   color: white;
+  border-color: transparent;
 }
 
 body main #pix-container {
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
+  border: 0.5rem solid #ED1B0C;
+  background-color: white;
 }
 
 .diezPixContainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[16];
-      grid-template-columns: repeat(16, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
 }
 
 .diezPix {
-  border: 0.01rem solid #845EC2;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
 }
 
 .diezPixOn {
   background-color: #845EC2;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
 }
 
 .treintaPixContainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[32];
-      grid-template-columns: repeat(32, 1fr);
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  overflow: hidden;
 }
 
 .treintaPix {
-  border: 0.01rem solid #845EC2;
-  width: 25px;
-  height: 25px;
+  width: 75px;
+  height: 75px;
 }
 
 .treintaPixOn {
   background-color: #845EC2;
-  width: 25px;
-  height: 25px;
+  width: 75px;
+  height: 75px;
 }
 
 .sesentaPixContainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[64];
-      grid-template-columns: repeat(64, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  overflow: hidden;
 }
 
 .sesentaPix {
-  border: 0.01rem solid #845EC2;
-  width: 12.5px;
-  height: 12.5px;
+  width: 50px;
+  height: 50px;
 }
 
 .sesentaPixOn {
   background-color: #845EC2;
-  width: 12.5px;
-  height: 12.5px;
+  width: 50px;
+  height: 50px;
 }
 /*# sourceMappingURL=custom.css.map */

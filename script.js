@@ -24,7 +24,7 @@ diezButton.addEventListener("click", function(e) {
     pixContainer.innerHTML = "";
     pixContainer.className = "diezPixContainer";
 
-    for(let i = 0; i < 256; i++){
+    for(let i = 0; i < 16; i++){
         const div = document.createElement("div");
         div.className = "diezPix";
         fragment.appendChild(div);
@@ -39,22 +39,26 @@ treintaButton.addEventListener("click", e =>{
     pixContainer.innerHTML = "";
     pixContainer.className = "treintaPixContainer";
 
-    for(let i = 0; i < 1024; i++){
+    for(let i = 0; i < 64; i++){
         let div = document.createElement("div");
         div.className = "treintaPix";
         fragment.appendChild(div);
     }
     pixContainer.appendChild(fragment);
+
+    pixOn();
 })
 
 sesentaButton.addEventListener("click", e =>{
     pixContainer.innerHTML = "";
     pixContainer.className = "sesentaPixContainer";
 
-    for(let i = 0; i < 4096; i++){
+    for(let i = 0; i < 144; i++){
         let div = document.createElement("div");
         div.className = "sesentaPix";
         fragment.appendChild(div);
     }
     pixContainer.appendChild(fragment);
+
+    pixOn();
 })
